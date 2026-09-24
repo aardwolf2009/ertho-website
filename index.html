@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ERTHO — Practical support for lasting conservation</title>
+  <meta name="description" content="Governance, practical consulting and learning for conservancies, collaborative initiatives, conservation NGOs and regulators. Based in the Western Cape, working across South Africa.">
+  <meta name="theme-color" content="#233c30">
+  <meta property="og:title" content="ERTHO — Practical support for lasting conservation">
+  <meta property="og:description" content="Clear direction. Stronger organisations. Conservation that lasts. Explore practical consulting, governance support and collaborative learning with Jacques Smit.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="./assets/ertho-logo.png" type="image/png">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script src="./src/app.js" defer></script>
+</head>
+<body>
+  <a href="#main" class="fixed -top-20 left-4 z-[100] bg-forest px-5 py-3 text-white focus:top-4">Skip to content</a>
+  <header class="sticky top-0 z-50 border-b border-line bg-paper/95 backdrop-blur-md">
+    <div class="shell flex h-[88px] items-center justify-between gap-6 md:h-[100px]">
+      <a href="#home" aria-label="ERTHO home" class="shrink-0"><img src="./assets/ertho-logo.png" width="132" height="88" alt="ERTHO" class="h-[70px] w-[106px] object-contain mix-blend-multiply md:h-[82px] md:w-[123px]"></a>
+      <nav aria-label="Main navigation" class="hidden items-center gap-7 md:flex lg:gap-9">
+        <a class="nav-link" href="#support">Our support</a>
+        <a class="nav-link" href="#work">Our work</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#resources">Resources</a>
+      </nav>
+      <a href="#contact" class="button button-primary hidden md:inline-flex">Let’s talk <span aria-hidden="true">↗</span></a>
+      <button id="menu-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false" class="flex min-h-12 items-center gap-4 text-sm font-bold md:hidden"><span data-menu-label>Menu</span><span aria-hidden="true" class="text-xl">☰</span></button>
+    </div>
+    <nav id="mobile-menu" aria-label="Mobile navigation" hidden class="fixed top-[88px] left-0 h-[calc(100dvh-88px)] w-full overflow-y-auto bg-paper px-6 py-8 md:hidden">
+      <div class="flex flex-col divide-y divide-line font-display text-3xl">
+        <a class="py-5" href="#support">Our support</a><a class="py-5" href="#work">Our work</a><a class="py-5" href="#about">About Jacques</a><a class="py-5" href="#resources">Resources</a><a class="py-5" href="#contact">Let’s talk ↗</a>
+      </div>
+      <p class="eyebrow mt-12 text-muted">Rooted in the Western Cape</p>
+    </nav>
+  </header>
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="overflow-hidden">
+      <div class="shell grid items-center gap-12 pt-12 pb-16 md:grid-cols-[1.05fr_1fr] md:gap-8 md:pt-16 md:pb-20 lg:gap-16">
+        <div class="relative z-10">
+          <p class="eyebrow mb-7 flex items-center gap-3 text-muted"><span class="h-1.5 w-1.5 bg-accent" aria-hidden="true"></span> People. Purpose. Conservation.</p>
+          <h1 class="font-display text-[clamp(3.5rem,6vw,5.35rem)] leading-[1.04] tracking-[-0.05em]">Good intentions.<br>Lasting<br><em class="font-normal text-[#777c21]">conservation.</em></h1>
+          <p class="mt-7 max-w-[420px] text-[16px] leading-[1.85] text-muted">The right guidance helps good conservation work go further. ERTHO brings practical expertise, clear governance and people together to help your initiative thrive.</p>
+          <div class="mt-8 flex flex-wrap items-center gap-x-7 gap-y-4">
+            <a class="button button-primary" href="#contact">Discuss your initiative <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#support">How we can help <span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="mt-10 flex items-center gap-2 text-[11px] tracking-wide text-muted"><svg aria-hidden="true" width="14" height="17" viewBox="0 0 16 20" fill="none"><path d="M14 7c0 4-6 11-6 11S2 11 2 7a6 6 0 1 1 12 0Z" stroke="currentColor"/><circle cx="8" cy="7" r="2" stroke="currentColor"/></svg> Western Cape roots. A wider perspective.</p>
+        </div>
+        <div class="hero-frame relative isolate mr-3 md:ml-2">
+          <div class="relative h-[380px] overflow-hidden rounded-tl-[100px] md:h-[580px] md:rounded-tl-[140px]">
+            <img src="./assets/conservation-landscape.jpg" width="640" height="360" fetchpriority="high" alt="Mountain slopes and native vegetation in the Western Cape" class="hero-image h-full w-full object-cover">
+            <div class="absolute inset-0 bg-linear-to-t from-forest/85 via-forest/5 to-transparent"></div>
+            <div class="absolute right-7 bottom-7 left-7 border-t border-white/35 pt-5 text-white">
+              <p class="eyebrow text-white/80">Stronger foundations. Shared futures.</p>
+              <p class="mt-3 max-w-[300px] font-display text-[27px] leading-tight">Conservation works<br>when people work together.</p>
+            </div>
+            <span class="absolute top-5 right-5 flex h-11 w-11 items-center justify-center rounded-full border border-white/60 text-xl text-white" aria-hidden="true">↗</span>
+          </div>
+        </div>
+      </div>
+      <div class="shell pb-12">
+        <div class="border-y border-line py-6 md:flex md:items-center md:justify-between md:gap-6">
+          <p class="eyebrow mb-5 shrink-0 text-muted md:mb-0">Working with</p>
+          <ul class="grid grid-cols-2 gap-x-5 gap-y-4 text-[12px] font-bold md:flex md:flex-wrap md:gap-8 lg:gap-12">
+            <li>Conservancies</li><li>Private collaborative initiatives</li><li>Conservation NGOs</li><li>Regulators</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- SERVICES: provisional grouping, see brand-positioning.md -->
+    <section id="support" class="pt-8 pb-20 md:pt-12 md:pb-28">
+      <div class="shell">
+        <div class="mb-12 grid gap-6 md:grid-cols-2 md:gap-20">
+          <div><p class="eyebrow mb-5 text-muted">01 / Our support</p><h2 class="section-title">A clearer way forward.</h2></div>
+          <p class="max-w-[450px] self-end text-[15px] leading-relaxed text-muted">Whether you’re facing a difficult decision, building a new initiative or planning for the long term, we help you understand the situation and take the next step.</p>
+        </div>
+        <div class="grid gap-6 md:grid-cols-3">
+          <article class="flex flex-col border-t-2 border-accent bg-white/60 p-7 lg:p-8">
+            <div class="mb-10 flex items-center justify-between"><span class="font-display text-3xl text-accent">01</span><svg aria-hidden="true" width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M5 28 28 5M13 5h15v15M5 9v19h19"/></svg></div>
+            <h3 class="font-display text-[28px] leading-tight">Practical<br>consulting</h3>
+            <p class="mt-4 mb-6 text-sm leading-[1.8] text-muted">An experienced perspective when the next decision matters.</p>
+            <ul class="service-list mb-6"><li>Environmental issues &amp; public participation</li><li>Technical document &amp; desktop reviews</li><li>Facilitation &amp; stakeholder dialogue</li></ul>
+            <details class="disclosure mt-auto border-t border-line pt-4"><summary class="flex min-h-11 items-center justify-between gap-4 text-xs font-bold">Explore this support <span class="plus" aria-hidden="true">+</span></summary><p class="mt-3 text-sm leading-relaxed text-muted">Get help understanding development proposals and scoping reports, bringing different perspectives into a constructive response, and navigating sensitive conversations. Support can be remote or in person, depending on the task.</p><a href="mailto:ertho.environmental@outlook.com?subject=Practical%20consulting%20enquiry" class="text-link mt-4">Discuss your challenge ↗</a></details>
+          </article>
+          <article class="flex flex-col border-t-2 border-accent bg-white/60 p-7 lg:p-8">
+            <div class="mb-10 flex items-center justify-between"><span class="font-display text-3xl text-accent">02</span><svg aria-hidden="true" width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M17 4v9M7 22v-9h20v9M4 23h7v7H4zM23 23h7v7h-7zM13 4h8v-3h-8M14 23h7v7h-7zM17 13v10"/></svg></div>
+            <h3 class="font-display text-[28px] leading-tight">Governance<br>best practice</h3>
+            <p class="mt-4 mb-6 text-sm leading-[1.8] text-muted">Clear roles, sound decisions and a plan your people can work with.</p>
+            <ul class="service-list mb-6"><li>Governance structures &amp; tailored documents</li><li>Management planning &amp; self-assessment</li><li>Budgeting &amp; fundraising strategy</li></ul>
+            <details class="disclosure mt-auto border-t border-line pt-4"><summary class="flex min-h-11 items-center justify-between gap-4 text-xs font-bold">Explore this support <span class="plus" aria-hidden="true">+</span></summary><p class="mt-3 text-sm leading-relaxed text-muted">Build practical foundations with constitutions, procedures, position statements and templates tailored to your initiative. Connect your budget and funding approach to a realistic management plan, and identify where your organisation needs to develop.</p><a href="mailto:ertho.environmental@outlook.com?subject=Governance%20support%20enquiry" class="text-link mt-4">Discuss your organisation ↗</a></details>
+          </article>
+          <article class="flex flex-col border-t-2 border-accent bg-white/60 p-7 lg:p-8">
+            <div class="mb-10 flex items-center justify-between"><span class="font-display text-3xl text-accent">03</span><svg aria-hidden="true" width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="17" cy="8" r="4"/><circle cx="7" cy="22" r="4"/><circle cx="27" cy="22" r="4"/><path d="m14 12-5 6m11-6 5 6M11 23h12M3 32v-2c0-3 8-3 8 0v2m12 0v-2c0-3 8-3 8 0v2"/></svg></div>
+            <h3 class="font-display text-[28px] leading-tight">Learning &amp;<br>collaboration</h3>
+            <p class="mt-4 mb-6 text-sm leading-[1.8] text-muted">Shared knowledge that builds confidence and brings people together.</p>
+            <ul class="service-list mb-6"><li>Workshops &amp; landowner days</li><li>Practical tools &amp; knowledge sharing</li><li>Specialist connections &amp; skills transfer</li></ul>
+            <details class="disclosure mt-auto border-t border-line pt-4"><summary class="flex min-h-11 items-center justify-between gap-4 text-xs font-bold">Explore this support <span class="plus" aria-hidden="true">+</span></summary><p class="mt-3 text-sm leading-relaxed text-muted">Plan sessions around your needs, from governance and strategy to specialist topics such as erosion control, botany or conservation agriculture. ERTHO helps coordinate topics, facilitators and logistics, drawing on a wider conservation network.</p><a href="mailto:ertho.environmental@outlook.com?subject=Workshop%20or%20collaboration%20enquiry" class="text-link mt-4">Plan a conversation ↗</a></details>
+          </article>
+        </div>
+        <div class="mt-8 flex flex-col justify-between gap-3 border-b border-line pb-6 sm:flex-row sm:items-center"><p class="text-xs leading-relaxed text-muted">Support shaped around your organisation, its stage of development and its resources.</p><p class="text-[11px] text-muted">ERTHO does not provide legal or financial advice.</p></div>
+      </div>
+    </section>
+    <!-- ENGAGEMENT -->
+    <section class="topo bg-forest py-14 text-white md:py-16" aria-labelledby="engagement-title">
+      <div class="shell grid gap-10 md:grid-cols-[1.1fr_1fr] md:gap-20">
+        <div><p class="eyebrow mb-5 text-lime">The right level of support</p><h2 id="engagement-title" class="font-display text-4xl leading-tight tracking-tight md:text-[45px]">A specific challenge.<br>Or a longer conversation.</h2><p class="mt-5 max-w-[380px] text-sm leading-relaxed text-white/70">Start with what you need. Together, we can agree on a practical scope and a way of working.</p></div>
+        <div class="divide-y divide-white/20">
+          <div class="pb-6"><div class="flex items-center justify-between"><h3 class="font-display text-2xl">Project consulting</h3><span class="text-lime" aria-hidden="true">↗</span></div><p class="mt-3 text-sm leading-relaxed text-white/75">Focused assistance with a decision, document, workshop or environmental challenge.</p></div>
+          <div class="pt-6"><div class="flex items-center justify-between"><h3 class="font-display text-2xl">Ongoing retainer support</h3><span class="text-lime" aria-hidden="true">↗</span></div><p class="mt-3 text-sm leading-relaxed text-white/75">Continuity, regular access to Jacques’s expertise and a sounding board as your initiative develops.</p></div>
+          <a class="text-link mt-7 text-lime" href="#contact">Let’s find the right approach <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+    <!-- SELECTED WORK -->
+    <section id="work" class="py-20 md:py-28">
+      <div class="shell">
+        <div class="mb-12 flex flex-col justify-between gap-5 md:flex-row md:items-end"><div><p class="eyebrow mb-5 text-muted">02 / Our work</p><h2 class="section-title">Putting principles<br>into practice.</h2></div><p class="max-w-[330px] text-sm leading-relaxed text-muted">Real situations. Different perspectives.<br>Constructive ways to move forward.</p></div>
+        <div class="grid gap-8 md:grid-cols-2">
+          <article class="border border-line">
+            <div class="relative h-64 overflow-hidden lg:h-72"><img src="./assets/governance-workshop.jpg" width="800" height="534" loading="lazy" alt="Presentation on conservancy governance and management at a workshop" class="h-full w-full object-cover"><span class="absolute bottom-5 left-6 bg-paper px-3 py-2 text-[10px] font-bold uppercase tracking-widest">Learning &amp; collaboration</span></div>
+            <div class="p-7 lg:p-9"><p class="eyebrow mb-4 text-muted">Gouritz Cluster Biosphere Reserve</p><h3 class="font-display text-[28px] leading-tight">Shared knowledge.<br>Stronger conservancies.</h3><p class="mt-5 text-sm leading-[1.8] text-muted">Jacques co-facilitated a conservancy governance and strategy workshop across the GCBR landscape, alongside Apex Conservation Services and GCBR.</p>
+              <details class="disclosure mt-6 border-t border-line pt-3"><summary class="flex min-h-11 items-center justify-between text-xs font-bold">Explore the work <span class="plus" aria-hidden="true">+</span></summary><div class="space-y-4 pt-4 text-sm leading-relaxed text-muted"><p>ERTHO contributed governance and management guidance. Apex Conservation Services shared expertise in alien invasive plant management, while GCBR addressed participation in urban conservancies.</p><p>Attending conservancies and partner organisations received visual governance tools, a conservancy organogram and an interactive readiness self-assessment tool to support the discussion.</p></div></details>
+            </div>
+          </article>
+          <article class="border border-line">
+            <div class="topo relative flex h-64 items-center justify-center overflow-hidden bg-[#e4e7d9] p-8 lg:h-72"><div class="max-w-[300px] border-l-2 border-accent pl-6"><p class="font-display text-[31px] leading-[1.2] tracking-tight">A constructive voice.<br>A collaborative<br>way forward.</p></div><span class="absolute bottom-5 left-6 bg-paper px-3 py-2 text-[10px] font-bold uppercase tracking-widest">Practical consulting</span></div>
+            <div class="p-7 lg:p-9"><p class="eyebrow mb-4 text-muted">McGregor Vrolijkheid Conservancy</p><h3 class="font-display text-[28px] leading-tight">An objective response<br>to proposed development.</h3><p class="mt-5 text-sm leading-[1.8] text-muted">ERTHO helped the conservancy bring its mandate, technical information and stakeholder views together into a coherent public participation response.</p>
+              <details class="disclosure mt-6 border-t border-line pt-3"><summary class="flex min-h-11 items-center justify-between text-xs font-bold">Explore the work <span class="plus" aria-hidden="true">+</span></summary><div class="space-y-4 pt-4 text-sm leading-relaxed text-muted"><p>The work combined the conservancy’s adopted constitution, a desktop review of the pre-application draft scoping report, and comments from committee members and other stakeholders.</p><p>The submission recognised the prospective developer’s economic needs and private property rights, identified risks for consideration, and invited the developer to join the conservancy.</p><p>The approach kept voluntary cooperation at the centre of the conservancy’s response.</p></div></details>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT -->
+    <section id="about" class="border-y border-line bg-sand/50 py-20 md:py-24">
+      <div class="shell grid gap-12 md:grid-cols-[0.85fr_1.15fr] md:gap-20">
+        <div><p class="eyebrow mb-5 text-muted">03 / Meet Jacques</p><h2 class="section-title">Research informed.<br><em class="font-normal">Grounded in practice.</em></h2><div class="mt-10 border-l-2 border-accent pl-5"><p class="text-sm font-bold">Jacques Smit</p><p class="mt-2 text-xs text-muted">Founder, ERTHO (Pty) Ltd</p></div><p class="mt-8 max-w-[340px] text-sm leading-relaxed text-muted">Based in Robertson, Western Cape.<br>Working nationally. Open to international knowledge sharing and skills transfer.</p></div>
+        <div class="pt-1"><p class="font-display text-[24px] leading-[1.5]">Conservation depends on people as much as it depends on the places they care for.</p><p class="mt-6 text-[15px] leading-[1.85] text-muted">Jacques brings experience across conservation management, eco-tourism, local government pollution control and organic certification auditing. His master’s research into Western Cape conservancies became the foundation for ERTHO’s approach to governance and management.</p><p class="mt-5 text-[15px] leading-[1.85] text-muted">As a conservancy manager and chairperson of the Western Cape Conservation Stewardship Association, he understands the decisions, relationships and resource pressures that shape conservation work. ERTHO combines that experience with research, practical tools and access to a wider specialist network.</p><div class="mt-8 grid gap-4 border-t border-line pt-6 sm:grid-cols-3"><div><p class="text-sm font-bold">BSc</p><p class="mt-2 text-xs leading-relaxed text-muted">Conservation Ecology<br>2009</p></div><div><p class="text-sm font-bold">PGDip</p><p class="mt-2 text-xs leading-relaxed text-muted">Environmental Management<br>2021</p></div><div><p class="text-sm font-bold">MPhil</p><p class="mt-2 text-xs leading-relaxed text-muted">Environmental Management<br>2025</p></div></div></div>
+      </div>
+    </section>
+    <!-- RESOURCES -->
+    <section id="resources" class="py-20 md:py-24">
+      <div class="shell grid items-start gap-10 md:grid-cols-[0.85fr_1.15fr] md:gap-20">
+        <div><p class="eyebrow mb-5 text-muted">04 / Useful starting points</p><h2 class="section-title">Knowledge<br>worth sharing.</h2><p class="mt-6 max-w-[340px] text-sm leading-[1.8] text-muted">A useful tool can start an important conversation. Explore the free organogram, read ERTHO’s insights, or ask about resources suited to your organisation.</p></div>
+        <div class="divide-y divide-line border-y border-line">
+          <a href="./assets/conservancy-organogram.png" download="ERTHO-Conservancy-Organogram.png" class="group flex items-start gap-5 py-7"><span class="flex h-12 w-12 shrink-0 items-center justify-center bg-lime/60 text-xl" aria-hidden="true">↓</span><div class="grow"><p class="eyebrow mb-2 text-muted">Free resource · PNG</p><h3 class="font-display text-2xl group-hover:text-[#777c21]">Conservancy organogram</h3><p class="mt-2 text-sm leading-relaxed text-muted">A visual starting point for committee roles, responsibilities and working relationships.</p></div><span class="pt-5 text-xl" aria-hidden="true">↗</span></a>
+          <a href="https://www.linkedin.com/company/ertho/" target="_blank" rel="noopener noreferrer" class="group flex items-start gap-5 py-7"><span class="flex h-12 w-12 shrink-0 items-center justify-center bg-sand text-xl" aria-hidden="true">↗</span><div class="grow"><p class="eyebrow mb-2 text-muted">Articles &amp; perspectives · LinkedIn</p><h3 class="font-display text-2xl group-hover:text-[#777c21]">Ideas for stronger conservancies</h3><p class="mt-2 text-sm leading-relaxed text-muted">Thoughts on participation, management, sustainable funding and working together.</p><span class="sr-only">Opens in a new tab</span></div><span class="pt-5 text-xl" aria-hidden="true">↗</span></a>
+          <a href="mailto:ertho.environmental@outlook.com?subject=Tools%20and%20templates%20enquiry" class="group flex items-start gap-5 py-7"><span class="flex h-12 w-12 shrink-0 items-center justify-center bg-sand text-xl" aria-hidden="true">+</span><div class="grow"><p class="eyebrow mb-2 text-muted">Tailored to your needs</p><h3 class="font-display text-2xl group-hover:text-[#777c21]">Tools, templates &amp; guidance</h3><p class="mt-2 text-sm leading-relaxed text-muted">Ask about self-assessment tools, meeting templates, sponsor letters and tailored documents.</p></div><span class="pt-5 text-xl" aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT -->
+    <section id="contact" class="topo bg-forest py-20 text-white md:py-24">
+      <div class="shell grid gap-12 md:grid-cols-[1.1fr_1fr] md:gap-20">
+        <div><p class="eyebrow mb-6 text-lime">05 / Start a conversation</p><h2 class="font-display text-[48px] leading-[1.08] tracking-[-0.04em] md:text-[64px]">What’s your<br><em class="font-normal text-lime">next step?</em></h2><p class="mt-6 max-w-[390px] text-sm leading-[1.9] text-white/75">Tell Jacques about your organisation, the challenge you’re facing and what you’d like to achieve. We’ll explore how ERTHO can help.</p><a href="mailto:ertho.environmental@outlook.com?subject=Let%E2%80%99s%20discuss%20our%20initiative" class="button button-accent mt-8">Discuss your initiative <span aria-hidden="true">↗</span></a></div>
+        <div class="self-center">
+          <div class="border-t border-white/25 py-6"><p class="eyebrow mb-3 text-white/65">Email Jacques</p><a class="break-all font-display text-[22px] hover:text-lime sm:text-[26px]" href="mailto:ertho.environmental@outlook.com">ertho.environmental@outlook.com</a><div class="mt-3 flex flex-wrap items-center gap-4"><button type="button" id="copy-email" class="min-h-8 text-xs text-lime underline underline-offset-4">Copy email address</button><span id="copy-status" role="status" class="text-xs text-white/75"></span></div></div>
+          <div class="flex items-center justify-between gap-4 border-y border-white/25 py-6"><div><p class="eyebrow mb-3 text-white/65">Call / WhatsApp</p><a class="font-display text-2xl hover:text-lime" href="tel:+27727869301">+27 72 786 9301</a></div><a href="https://wa.me/27727869301?text=Hello%20Jacques%2C%20I%20would%20like%20to%20discuss%20our%20conservation%20initiative." target="_blank" rel="noopener noreferrer" class="flex h-12 w-12 items-center justify-center rounded-full border border-white/40 text-xl hover:bg-white/10" aria-label="Message Jacques on WhatsApp (opens in a new tab)">↗</a></div>
+          <div class="flex flex-wrap justify-between gap-4 pt-6 text-xs text-white/70"><p>Robertson · Western Cape · South Africa</p><a href="https://www.linkedin.com/company/ertho/" target="_blank" rel="noopener noreferrer" class="text-white underline underline-offset-4">LinkedIn ↗<span class="sr-only"> (opens in a new tab)</span></a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-[#1a3025] py-7 text-white/65"><div class="shell flex flex-col justify-between gap-4 text-[11px] sm:flex-row"><p>© 2026 ERTHO (Pty) Ltd <span class="mx-2" aria-hidden="true">·</span> Reg. no. 2026/287456/07</p><a href="#home" class="text-white/80 hover:text-lime">Back to the top ↑</a></div></footer>
+  <noscript><style>#menu-toggle{display:none}#mobile-menu{display:block;position:static;height:auto}#copy-email{display:none}</style></noscript>
+</body>
+</html>
