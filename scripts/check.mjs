@@ -10,6 +10,8 @@ page.on('pageerror', error => errors.push(error.message));
 page.on('response', response => { if (response.url().startsWith(base) && response.status() >= 400) errors.push(`${response.status()} ${response.url()}`); });
 try {
   await page.goto(base, { waitUntil: 'networkidle' });
+  await page.locator('img').evaluateAll(images => images.forEach(img => { img.loading = 'eager'; }));
+  await page.locator('img').evaluateAll(images => Promise.all(images.map(img => img.decode())));
   await page.screenshot({ path: '/tmp/ertho-desktop.png', fullPage: true });
   assert.equal(await page.locator('h1').count(), 1);
   const badImages = await page.locator('img').evaluateAll(images => images.filter(img => !img.complete || !img.naturalWidth).map(img => img.src));
@@ -30,6 +32,7 @@ try {
   assert.deepEqual(desktopAudit.violations.map(v => ({ id: v.id, nodes: v.nodes.map(n => n.target) })), [], 'Desktop accessibility');
   for (const width of [320, 390, 768, 1024, 1440]) {
     await page.setViewportSize({ width, height: 900 });
+    await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `No horizontal overflow at ${width}px`);
   }
   await page.setViewportSize({ width: 390, height: 844 });

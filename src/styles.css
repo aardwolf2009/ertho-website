@@ -6,7 +6,7 @@
   --color-paper: #f6f5ef;
   --color-forest: #233c30;
   --color-ink: #263c32;
-  --color-muted: #637065;
+  --color-muted: #526054;
   --color-accent: #9a9d24;
   --color-lime: #dfe2a8;
   --color-line: #d8ddd2;
@@ -33,7 +33,7 @@
   .button { @apply inline-flex min-h-12 items-center justify-center gap-7 px-6 py-3 text-[13px] font-bold transition-colors; }
   .button-primary { @apply bg-forest text-white hover:bg-[#375641]; }
   .button-accent { @apply bg-lime text-forest hover:bg-white; }
-  .text-link { @apply inline-flex min-h-11 items-center gap-5 border-b border-current pb-1 text-[13px] font-bold transition-colors hover:text-accent; }
+  .text-link { @apply inline-flex min-h-11 items-center gap-5 border-b border-current pb-1 text-[13px] font-bold transition-colors hover:text-[#6b701b]; }
   .nav-link { @apply py-3 text-[12px] font-medium text-muted transition-colors hover:text-forest; }
   .nav-link[aria-current="location"] { @apply text-forest underline decoration-accent decoration-2 underline-offset-8; }
   .service-list li { @apply relative border-t border-line py-3 pl-5 text-sm leading-relaxed; }

@@ -1,5 +1,7 @@
 # ERTHO website content archive
 
+For the current rebuild brief, see [brand-positioning.md](brand-positioning.md). The files below preserve the original site content.
+
 Captured on 2026-09-24, starting from [the homepage](https://www.ertho.co.za/home).
 
 | Page | Copy and links |
@@ -7,8 +9,8 @@ Captured on 2026-09-24, starting from [the homepage](https://www.ertho.co.za/hom
 | Home | [home.md](home.md) |
 | About | [about.md](about.md) |
 | Contact | [contact.md](contact.md) |
-| Log in | [login.md](login.md) |
-| Forgot your password? | [restore-password.md](restore-password.md) |
+| Log in | Previously captured; file no longer present |
+| Forgot your password? | Previously captured; file no longer present |
 
 Each file includes published page text, CTA labels and destinations, outbound hyperlinks, and relevant form or embedded-content details. Shared navigation and footer copy appear in each applicable file. Duplicate desktop/mobile menus are recorded once. The homepage file also transcribes its three resource-preview images.
 
